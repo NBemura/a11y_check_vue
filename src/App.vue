@@ -14,7 +14,7 @@ import HelloWorld from './components/HelloWorld.vue'
     <h1>トップ見出し</h1>
     <h3>サブ見出し</h3>
 
-    {/* labelのないinput */}
+    <!-- labelのないinput -->
     <input type="text" placeholder="名前" />
 
     <!-- コントラスト不足のテキスト -->
@@ -28,16 +28,17 @@ import HelloWorld from './components/HelloWorld.vue'
     </div>
 
 
-    {/* 不適切なtabIndex（0以外の正の値） */}
+    <!-- 不適切なtabIndex（0以外の正の値） -->
     <div tabIndex="5">不適切なtabIndex</div>
 
-    {/* 不正なaria属性 */}
+    <!-- 不正なaria属性 -->
     <div aria-labl="test">typoしたaria属性</div>
 
-    {/* aタグのhrefなし */}
+    <!-- aタグのhrefなし -->
     <a>リンクだがhrefがない</a>
+    <a><i class="fa-icon"></i></a>
 
-    {/* role属性の誤用 */}
+    <!-- role属性の誤用 -->
     <div role="button">roleだけでキーボード操作不可</div>
 
   </div>
