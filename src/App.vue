@@ -11,11 +11,28 @@ import HelloWorld from './components/HelloWorld.vue'
     <button></button>
 
     <!-- 見出し階層不正（h3の前にh2がない） -->
-    <h1>トップ見出し</h1>
+    <h1 id="aaa">トップ見出し</h1>
     <h3>サブ見出し</h3>
+    <h1 id="aaa">トップ見出し</h1>
 
     <!-- labelのないinput -->
-    <input type="text" placeholder="名前" />
+    <form action="">
+      <div>
+        <label for="name">名前</label>
+        <input type="text" placeholder="名前" />
+      </div>
+      <div>
+        名前
+        <input type="text" placeholder="あああ" />
+      </div>
+
+      <label for="test01">
+        <input type="radio" id="test01" name="test" />ラジオ１
+      </label>
+      <label for="test02">
+        <input type="radio" id="test02" name="test" />ラジオ２
+      </label>
+    </form>
 
     <!-- コントラスト不足のテキスト -->
     <p style="color: #ccc; background: #fff;">コントラスト不足のテキスト</p>
